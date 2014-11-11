@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50cccccc"
+    tools:context="org.mdcconcepts.kidsi.teacher.teacherapplication.Attendance.AttendanceActivity">
+
+    <GridView
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="300dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        />
+</FrameLayout>

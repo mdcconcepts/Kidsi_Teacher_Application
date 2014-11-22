@@ -19,13 +19,22 @@ public class AttendanceActivity extends Activity {
         setContentView(R.layout.activity_attendance);
 
         String[] parentName = {
-                "Mrs.Poonam",
+                "Mr.Om Patel",
+                "Ms.Shweta Kulkarni",
+                "Mr.Anirudha Kulkarni",
+                "Ms.Sharayu Jagtap",
+                "Mr.Sagar More"
         };
 
 
 
         int[] imageParent = {
-                R.drawable.ic_username,
+                R.drawable.ic_kid_two,
+                R.drawable.ic_kid_one,
+                R.drawable.ic_kid_three,
+                R.drawable.ic_kid_five,
+                R.drawable.ic_kid_four,
+
         };
         grid = (GridView) findViewById(R.id.grid);
         adapter=new AttendanceAdapter(AttendanceActivity.this,parentName,imageParent);

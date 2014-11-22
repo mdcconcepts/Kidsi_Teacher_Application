@@ -21,19 +21,19 @@ public class AttendanceAdapter extends BaseAdapter {
 
     Typeface font;
 
-    private final String[] parentName;
+    private final String[] studentName;
 
     private final int[] imageParent;
 
-    TextView TextViewController_ParentName_Online;
+    TextView TextViewController_StudentName;
 
     TextView TextViewController_ParentMobile;
 
-    ImageView ImageViewController_ProfilePic;
+    ImageView imageViewController_ProfilePic;
 
-    public AttendanceAdapter(Context c,String[] parentName,int[] imageParent) {
+    public AttendanceAdapter(Context c,String[] studentName,int[] imageParent) {
         mContext = c;
-        this.parentName = parentName;
+        this.studentName = studentName;
         this.imageParent=imageParent;
     }
     @Override
@@ -68,17 +68,15 @@ public class AttendanceAdapter extends BaseAdapter {
 
             font =Typeface.createFromAsset(mContext.getAssets(), Util.FontName);
 
-//            TextViewController_ParentName_Online=(TextView)grid.findViewById(R.id.TextViewController_ParentName_Online);
-//            TextViewController_ParentMobile=(TextView)grid.findViewById(R.id.TextViewController_ParentMobile);
-//
-//            ImageViewController_ProfilePic =(ImageView)grid.findViewById(R.id.ImageViewController_ProfilePic);
-//
-//            TextViewController_ParentName_Online.setTypeface(font);
-//            TextViewController_ParentMobile.setTypeface(font);
-//
-//            TextViewController_ParentName_Online.setText(parentName[position]);
-//            TextViewController_ParentMobile.setText(parentMobileNumber[position]);
-//            ImageViewController_ProfilePic.setImageResource(imageParent[position]);
+            TextViewController_StudentName=(TextView)grid.findViewById(R.id.TextViewController_StudentName);
+
+            TextViewController_StudentName.setTypeface(font);
+
+            imageViewController_ProfilePic =(ImageView)grid.findViewById(R.id.imageViewController_ProfilePic);
+
+            TextViewController_StudentName.setText(studentName[position]);
+
+            imageViewController_ProfilePic.setImageResource(imageParent[position]);
 
         } else {
             grid = (View) convertView;

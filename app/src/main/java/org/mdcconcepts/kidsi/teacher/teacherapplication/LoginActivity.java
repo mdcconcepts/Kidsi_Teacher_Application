@@ -8,6 +8,7 @@ import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
@@ -65,9 +66,16 @@ public class LoginActivity extends Activity {
 
             EditText_Password = (EditText) findViewById(R.id.password);
 
+
+
+
             EditText_Username.setText(AppSharedPreferences.getUname(LoginActivity.this));
 
             EditText_Password.setText(AppSharedPreferences.getPassword(LoginActivity.this));
+
+            EditText_Username.setText("abc");
+
+            EditText_Password.setText("abc");
 
             TextViewController_Title = (TextView) findViewById(R.id.TextViewController_Title);
 
@@ -93,6 +101,9 @@ public class LoginActivity extends Activity {
 
             TextViewController_ForgotPassword.setTypeface(font);
 
+            getWindow().setSoftInputMode(
+                    WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
             ButtonController_Login.setOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -103,24 +114,24 @@ public class LoginActivity extends Activity {
 
                         boolean connected = false;
                         isConnected = connectionDetector.isConnectingToInternet();
-                        if (isConnected) {
-                            if (EditText_Username.getText().toString().trim().isEmpty()) {
-                                EditText_Username.setError("Please enter username");
-
-                            } else if (EditText_Password.getText().toString().trim().isEmpty()) {
-                                EditText_Password.setError("Please enter password");
-
-                            } else {
+//                        if (isConnected) {
+//                            if (EditText_Username.getText().toString().trim().isEmpty()) {
+//                                EditText_Username.setError("Please enter username");
+//
+//                            } else if (EditText_Password.getText().toString().trim().isEmpty()) {
+//                                EditText_Password.setError("Please enter password");
+//
+//                            } else {
 //                                Toast.makeText(getApplicationContext(),"Onclick",Toast.LENGTH_LONG).show();
                                 animate_bus();
 //
 //                                new AttemptLogin().execute();
-                            }
-                        } else {
-                            InternetConnectionDialog internetConnectionDialog = new InternetConnectionDialog(LoginActivity.this);
-                            internetConnectionDialog.show();
-
-                        }
+//                            }
+//                        } else {
+//                            InternetConnectionDialog internetConnectionDialog = new InternetConnectionDialog(LoginActivity.this);
+//                            internetConnectionDialog.show();
+//
+//                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -151,7 +162,7 @@ public class LoginActivity extends Activity {
                 startActivity(i);
                 overridePendingTransition(
                         R.anim.slide_in_right, R.anim.slide_out_left);
-                finish();
+//                finish();
                 Incomming_Bus.setVisibility(View.INVISIBLE);
             }
 

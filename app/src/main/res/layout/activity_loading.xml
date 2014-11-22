@@ -16,7 +16,7 @@
         android:layout_marginBottom="25dp"
         android:src="@drawable/kids_drop"
         android:layout_weight="0"
-        android:layout_marginRight="190dp"
+        android:layout_marginRight="160dp"
         android:visibility="invisible" />
 
     <LinearLayout

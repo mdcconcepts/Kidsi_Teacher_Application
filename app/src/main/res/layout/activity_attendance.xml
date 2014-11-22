@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#50cccccc"
+    android:background="@drawable/ic_attendance_bg"
     tools:context="org.mdcconcepts.kidsi.teacher.teacherapplication.Attendance.AttendanceActivity">
 
     <GridView
@@ -15,7 +15,8 @@
         android:id="@+id/grid"
         android:verticalSpacing="20dp"
         android:horizontalSpacing="20dp"
-        android:layout_margin="10dp"
         android:padding="10dp"
+        android:layout_margin="5dp"
+
         />
 </FrameLayout>

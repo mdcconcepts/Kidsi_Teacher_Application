@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/orange_color"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/button1"
+            android:background="@drawable/ic_arrow_back_enabled"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:alpha="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageView_Play"
+                android:src="@drawable/play_zero"
+                android:layout_margin="10dp" />
+
+            <SeekBar
+                android:id="@+id/Progress_Play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:thumb="@drawable/ic_slider_thumb"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:secondaryProgress="0"
+                android:indeterminate="false"
+                android:max="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/horizontal_divider">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageView_Draw"
+                android:src="@drawable/draw_zero"
+                android:layout_margin="10dp"
+                android:background="@drawable/draw_one" />
+
+            <SeekBar
+                android:id="@+id/Progress_Draw"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:thumb="@drawable/ic_slider_thumb"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:secondaryProgress="0"
+                android:indeterminate="false"
+                android:max="20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/horizontal_divider">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageView_Sing"
+                android:src="@drawable/sing_zero"
+                android:layout_margin="10dp" />
+
+            <SeekBar
+                android:id="@+id/Progress_Sing"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:progress="0"
+                android:thumb="@drawable/ic_slider_thumb"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:secondaryProgress="0"
+                android:indeterminate="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ButtonController_ProgressNext"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/ic_forward_enable" />
+    </LinearLayout>
+</LinearLayout>

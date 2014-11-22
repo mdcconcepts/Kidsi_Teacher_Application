@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item>
+  <!--  <item>
         <shape>
             <padding
                 android:bottom="1dp"
@@ -20,7 +20,7 @@
                 android:right="1dp"
                 android:top="1dp" />
 
-            <solid android:color="#107f7f7f" />
+            <solid android:color="#10666666" />
 
             <corners android:radius="30dp" />
         </shape>
@@ -33,7 +33,7 @@
                 android:right="1dp"
                 android:top="1dp" />
 
-            <solid android:color="#207f7f7f" />
+            <solid android:color="#20666666" />
 
             <corners android:radius="30dp" />
         </shape>
@@ -64,15 +64,15 @@
             <corners android:radius="30dp" />
         </shape>
     </item>
-
+-->
     <!-- Background -->
     <item>
         <shape>
-            <solid android:color="#dbdbdb" />
+            <solid android:color="#E6E7E8" />
             <stroke
                 android:width="2dip"
-                android:color="#507f7f7f" />
-            <corners android:radius="30dp" />
+                android:color="#E6E7E8" />
+            <corners android:radius="50dp" />
         </shape>
     </item>
 

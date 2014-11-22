@@ -25,5 +25,6 @@
     </array>
 
     <string name="title_activity_attendance">AttendanceActivity</string>
+    <string name="title_activity_health_chart">HealthChartActivity</string>
 
 </resources>

@@ -57,7 +57,7 @@ public class LoadingActivity extends Activity {
 //        int height = displaymetrics.heightPixels;
         int width = displaymetrics.widthPixels;
 
-        width = (int) (width * 0.65);
+        width = (int) (width * 0.70);
 
         Animation animation1 = new TranslateAnimation(0.0f, width, 0.0f, 0.0f);
         animation1.setDuration(5000);
